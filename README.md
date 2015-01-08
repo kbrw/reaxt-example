@@ -6,6 +6,7 @@ Test it now (need npm and elixir):
 ```elixir
 git clone https://github.com/awetzel/reaxt-example
 cd reaxt-example
+mix deps.get
 iex -S mix
 ```
 
