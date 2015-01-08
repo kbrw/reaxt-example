@@ -5,7 +5,7 @@ defmodule ReaxtExample.Mixfile do
     [app: :reaxt_example,
      version: "0.0.1",
      elixir: "~> 1.0",
-     compilers: Mix.compilers ++ [:reaxt_webpack],
+     compilers: [:reaxt_webpack] ++ Mix.compilers,
      deps: deps]
   end
 
