@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "css-loader": "0.9.0",
+    "react-hot-loader": "^1.0.7",
+    "webpack": "^1.4.13",
+    "react": "^0.12.2",
+    "jsx-loader": "^0.12.2"
+  }
+}

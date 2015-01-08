@@ -1,0 +1,9 @@
+/_build
+/deps
+/priv/static
+/priv/server.js
+/priv/webpack.stats.json
+/web/node_modules
+erl_crash.dump
+*.ez
+*.swp
