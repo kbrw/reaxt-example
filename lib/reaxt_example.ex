@@ -59,7 +59,7 @@ defmodule ReaxtExample do
     send_rendered_resp(conn,{:multi_components,:with_css})
 
   get "/dyn_handler" do
-    render = Reaxt.render!(:dyn_comp,%{items: ["Home","Contact","Pages"]}, dyn_handler: true)
+    render = Reaxt.render!(:dyn_comp,%{items: ["Home","Contact","Pages"]})
     send_resp(conn, 200,EEx.eval_string(@layout,render: render))
   end
 
