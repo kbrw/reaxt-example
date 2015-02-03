@@ -31,17 +31,17 @@ var generate_props = function(router_state){
 }
 
 module.exports = {
-  reaxt_server_render (path,callback){
+  reaxt_server_render (path,render){
     Router.run(routes, path,function (Handler, state) {
-      callback(Handler,generate_props(state),null)
+      render(<Handler {...generate_props(state)}/>)
     })
   },
-  reaxt_client_render (initial_props,elemid,param){
+  reaxt_client_render (initial_props,render){
     var first = true
     Router.run(routes,Router.HistoryLocation,function(Handler,state){
       // first rendering use server side generated props, next one generate new props
       var props = first && initial_props || generate_props(state)
-      React.render(<Handler {...props}/>,document.getElementById(elemid))
+      render(<Handler {...props}/>)
       first = false
     })
   }
