@@ -1,5 +1,6 @@
 var React = require("react")
 var CssHeader = require("./multi_components.js").with_css
+var config = require("reaxt/config")
 module.exports = React.createClass({displayName: 'app',
   getInitialState: function(){
     return { focused: 0 }
@@ -12,6 +13,7 @@ module.exports = React.createClass({displayName: 'app',
     return (
       <div>
         <CssHeader></CssHeader>
+        <div>Example config : { config.example_config }</div>
         <ul>{ this.props.items.map(function(m, index){
           var style = ''
           if(self.state.focused == index) style = 'focused'
