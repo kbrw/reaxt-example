@@ -18,6 +18,6 @@ defmodule ReaxtExample.Mixfile do
   defp deps do
     [{:reaxt, "~> 0.2.0"},
      {:reprise, "~> 0.3.0", only: :dev},
-     {:cowboy,"~> 1.0.0"},{:plug,"~> 0.9.0"}]
+     {:cowboy,"~> 1.0.0"},{:plug,"~> 0.13.0"}]
   end
 end
