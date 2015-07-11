@@ -5,5 +5,5 @@
   "poison": {:hex, :poison, "1.4.0"},
   "poolboy": {:hex, :poolboy, "1.5.1"},
   "ranch": {:hex, :ranch, "1.1.0"},
-  "reaxt": {:hex, :reaxt, "0.2.7"},
+  "reaxt": {:hex, :reaxt, "0.3.0"},
   "reprise": {:hex, :reprise, "0.3.0"}}
