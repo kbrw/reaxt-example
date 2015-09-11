@@ -71,7 +71,7 @@ defmodule ReaxtExample do
 
   get "/myrouter/*_rest" do
     ## this part use react_router as an example of dynamic handler selection
-    render = Reaxt.render!(:my_router,full_path(conn))
+    render = Reaxt.render!(:my_router,conn.request_path)
     send_resp(conn, 200,EEx.eval_string(@layout,render: render))
   end
 
