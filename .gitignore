@@ -1,9 +1,12 @@
 /_build
 /deps
-/priv/static
-/priv/server.js
-/priv/webpack.stats.json
 /web/node_modules
 erl_crash.dump
 *.ez
 *.swp
+
+
+/priv/react_servers/**
+/priv/static/**
+/priv/stderr.log
+/priv/webpack.stats.json
