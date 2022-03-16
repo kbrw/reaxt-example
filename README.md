@@ -35,5 +35,3 @@ Then :
 - you can test hot loading by changing a react template in `web/components/xx`,
   or the css in `web/css/app.css`.
 
-Or with use of a dockerfile
-
